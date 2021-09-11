@@ -332,7 +332,7 @@
 
      </section>
 
-     <!------------------- FOOTER ----------------->
+    
 
      <footer class="footer">
        <div class="container">
@@ -341,7 +341,7 @@
       <a href="./" class="logo link"><span class="logo-text">Web</span><span class="logo-footer-text">Studio</span></a>
       <address class="footer-address">
         <ul class="contact-list list">
-          <li class="contact-item"> <a class="contact-address-link link" href="https://goo.gl/maps/cuJfHsVGohi9QnA79">г. Киев, пр-т Леси Украинки, 26</a> </li>
+          <li class="contact-item"> <a class="contact-address-link link" href="https://goo.gl/maps/cuJfHsVGohi9QnA79">г. Киев, пр-т Леси Украинки, 26</a></li>
           <li class="contact-item"> <a class="contact-link link" href="mailto:info@example.com">info@example.com</a> </li>
           <li class="contact-item"> <a class="contact-link link" href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
@@ -393,11 +393,11 @@
 
 
 
-     <div class="backdrop " data-modal>
+     <div class="backdrop is-hidden" data-modal>
        <div class="modal">
          <button class="btn-close" type="button" data-modal-close >
-          <svg class="close-icon" width="30" height="30">
-            <use href="./images/icons.svg#icon-close"></use>
+          <svg class="close-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-close-modal"></use>
           </svg>
         </button>
         <form action="#" class="modal-form">
@@ -406,7 +406,7 @@
             <label for="input-name" class="modal-form-label">Имя</label>
             <span class="input-wrap">
               <input type="text" name="username" id="input-name" class="modal-form-input">
-              <svg class="modal-form-icon" width=15 height=15>
+              <svg class="modal-form-icon" width="15" height="15">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
             </span>
@@ -415,7 +415,7 @@
             <label for="input-tel" class="modal-form-label">Телефон</label>
             <span class="input-wrap">
               <input type="tel" name="tel" id="input-tel" class="modal-form-input">
-            <svg class="modal-form-icon" width=15 height=15>
+            <svg class="modal-form-icon" width="15" height="15">
               <use href="./images/icons.svg#icon-tel"></use>
             </svg>
           </span>
@@ -434,8 +434,14 @@
             <textarea name="comment" id="input-comment" placeholder="Введите текст" class="modal-text"></textarea>
           </div>
           <div class="modal-form-field">
-            <input type="checkbox" id="check" class="checkbox" name="policy">
-            <label class="modal-policy check-label" for="check">Соглашаюсь с рассылкой и принимаю <a href="" class="input-policy"> Условия договора</a></label>
+            <input type="checkbox" id="check" class="checkbox visually-hidden" name="policy">
+            <label class="modal-policy check-label" for="check">
+            <span class="icon-check">
+              <svg>
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </span>
+              <span>Соглашаюсь с рассылкой и принимаю <a href="" class="input-policy"> Условия договора</a></span></label>
           </div>
           <button class="btn modal-button" type="submit">Отправить</button>
         </form>
@@ -444,6 +450,6 @@
      </div>
 
  </main>
-<!-- <script src="./js/modal.js"></script> -->
+<script src="./js/modal.js"></script>
 </body>
 </html>
